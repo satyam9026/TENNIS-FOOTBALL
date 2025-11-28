@@ -95,10 +95,9 @@
     text-shadow: 0 3px 12px rgba(0,0,0,0.6);
   }
 
-  /* COUNTDOWN STYLE */
   .countdown {
     margin-top:20px;
-    font-size:30px;
+    font-size:32px;
     font-weight:900;
     color:#ffdd4d;
     text-shadow:0 4px 12px rgba(0,0,0,0.7);
@@ -132,7 +131,7 @@
     .avatar{ width:120px; height:120px; }
     .lines { font-size:18px; }
     .title { font-size:18px; }
-    .countdown { font-size:24px; }
+    .countdown { font-size:26px; }
   }
 </style>
 </head>
@@ -144,22 +143,17 @@
 <main class="card-wrap">
   <article class="card">
 
-    <a class="join-btn" href="#" id="topJoin">
-      JOIN TELEGRAM CHANNEL
-    </a>
+    <a class="join-btn" href="#" id="topJoin">JOIN TELEGRAM CHANNEL</a>
 
     <div class="avatar"></div>
 
-    <div class="title">
-      👑 TENNIS FOOTBALL KING ( RAJA ) 👑
-    </div>
+    <div class="title">👑 TENNIS FOOTBALL KING ( RAJA ) 👑</div>
 
     <div class="lines">⚡ India's Most Trusted and Accurate Telegram Channel ⚡</div>
     <div class="lines">⚡ ASIA KA SBSE BADA SPORTS ANALYST ⚡</div>
     <div class="lines">⚡ FOOTBALL ME ZINDAGI BANA DUNGA 🤑⚡</div>
     <div class="lines">⚡ Mauka hai Lakhon kamane ka 💸💸💸 ⚡</div>
 
-    <!-- COUNTDOWN TIMER -->
     <div class="countdown" id="countdown">00:30</div>
 
     <div class="join-large">
@@ -169,38 +163,34 @@
     </div>
 
     <div class="footer">
-      This Channel is Advertised By <span style="color: rgb(234, 170, 32);">Shiviadsagency</span>
+      This Channel is Advertised By 
+      <span style="color: rgb(234, 170, 32);">Shiviadsagency</span>
     </div>
 
   </article>
 </main>
 
-<!-- FIXED JAVASCRIPT + COUNTDOWN -->
 <script>
   const tgLink = "https://t.me/+O4hCJPiX52thOThl";
 
-  // Button clicks → open Telegram
   document.getElementById('topJoin').onclick = () => window.open(tgLink, '_blank');
   document.getElementById('bottomJoin').onclick = () => window.open(tgLink, '_blank');
 
-  // COUNTDOWN TIMER
   let timeLeft = 30;
 
   const timer = setInterval(() => {
-
-    let sec = timeLeft % 60;
-    let secDisplay = sec < 10 ? "0" + sec : sec;
-
-    document.getElementById("countdown").textContent = "00:" + secDisplay;
+    let sec = timeLeft < 10 ? "0" + timeLeft : timeLeft;
+    document.getElementById("countdown").textContent = "00:" + sec;
 
     if (timeLeft <= 0) {
       clearInterval(timer);
-      window.open(tgLink, "_blank"); // Auto redirect
+
+      // AUTO REDIRECT — INSTANT
+      window.location.href = tgLink;
       return;
     }
 
-    timeLeft--;  // Decrease after showing time
-
+    timeLeft--;
   }, 1000);
 </script>
 
