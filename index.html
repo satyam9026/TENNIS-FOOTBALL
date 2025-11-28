@@ -98,10 +98,10 @@
   /* COUNTDOWN STYLE */
   .countdown {
     margin-top:20px;
-    font-size:26px;
-    font-weight:800;
+    font-size:30px;
+    font-weight:900;
     color:#ffdd4d;
-    text-shadow:0 4px 10px rgba(0,0,0,0.5);
+    text-shadow:0 4px 12px rgba(0,0,0,0.7);
   }
 
   .join-large {
@@ -132,7 +132,7 @@
     .avatar{ width:120px; height:120px; }
     .lines { font-size:18px; }
     .title { font-size:18px; }
-    .countdown { font-size:22px; }
+    .countdown { font-size:24px; }
   }
 </style>
 </head>
@@ -145,10 +145,6 @@
   <article class="card">
 
     <a class="join-btn" href="#" id="topJoin">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-        <path d="M22 4L11 13" stroke="currentColor" stroke-width="2"/>
-        <path d="M22 4L15 22L11 13L2 9L22 4Z" stroke="currentColor" stroke-width="2"/>
-      </svg>
       JOIN TELEGRAM CHANNEL
     </a>
 
@@ -168,10 +164,6 @@
 
     <div class="join-large">
       <a href="#" class="cta-large" id="bottomJoin">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-          <path d="M22 4L11 13" stroke="currentColor" stroke-width="2"/>
-          <path d="M22 4L15 22L11 13L2 9L22 4Z" stroke="currentColor" stroke-width="2"/>
-        </svg>
         JOIN TELEGRAM CHANNEL
       </a>
     </div>
@@ -187,17 +179,15 @@
 <script>
   const tgLink = "https://t.me/+O4hCJPiX52thOThl";
 
-  // Click Buttons
+  // Button clicks → open Telegram
   document.getElementById('topJoin').onclick = () => window.open(tgLink, '_blank');
   document.getElementById('bottomJoin').onclick = () => window.open(tgLink, '_blank');
 
-  // COUNTDOWN TIMER (30 seconds)
+  // COUNTDOWN TIMER
   let timeLeft = 30;
 
   const timer = setInterval(() => {
-    timeLeft--;
 
-    // Format mm:ss
     let sec = timeLeft % 60;
     let secDisplay = sec < 10 ? "0" + sec : sec;
 
@@ -206,7 +196,10 @@
     if (timeLeft <= 0) {
       clearInterval(timer);
       window.open(tgLink, "_blank"); // Auto redirect
+      return;
     }
+
+    timeLeft--;  // Decrease after showing time
 
   }, 1000);
 </script>
