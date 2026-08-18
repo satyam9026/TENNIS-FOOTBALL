@@ -1,7 +1,16 @@
-<!doctype html>
+
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Meta Pixel Code -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SIVIADSAGENCY IN LUCKNOW</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -11,204 +20,208 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1606575050290660');
+fbq('init', '1545540846659497');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1606575050290660&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=1545540846659497&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>TENNIS FOOTBALL KING</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
-
+<!-- End Meta Pixel Code -->
 <style>
-  :root{
-    --accent:#2b9cff;
-    --accent-dark:#1f72c7;
-    --card-width:540px;
-  }
 
-  html,body{
-    height:100%;
-    margin:0;
-    font-family:'Montserrat',system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
-  }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Poppins', sans-serif;
+}
 
-  .bg {
-    position:fixed;
-    inset:0;
-    background-image: url("image/cricket.jpg");
-    background-size:cover;
-    background-position:center;
-    z-index:-2;
-  }
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#1a0000,#3b0000,#5e0000,#8b0000);
+background-size:400% 400%;
+animation:gradientMove 12s infinite alternate;
+overflow:hidden;
+}
 
-  .overlay {
-    position:fixed;
-    inset:0;
-    background: linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.80));
-    z-index:-1;
-  }
+@keyframes gradientMove{
+0%{background-position:0% 50%;}
+100%{background-position:100% 50%;}
+}
 
-  .card-wrap{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:48px 20px;
-  }
+/* floating glow circles */
 
-  .card {
-    width:100%;
-    max-width:var(--card-width);
-    text-align:center;
-    color:#fff;
-  }
+.circle{
+position:absolute;
+border-radius:50%;
+filter:blur(120px);
+opacity:0.6;
+animation:float 10s infinite alternate;
+}
 
-  .join-btn {
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
-    background: linear-gradient(180deg,var(--accent),var(--accent-dark));
-    color:white;
-    padding:14px 18px;
-    border-radius:8px;
-    font-weight:700;
-    text-decoration:none;
-    box-shadow: 0 10px 0 rgba(0,0,0,0.35);
-    margin: 8px auto 20px;
-    transition: 0.2s;
-  }
+.circle1{
+width:300px;
+height:300px;
+background:#ff0000;
+top:10%;
+left:10%;
+}
 
-  .join-btn:hover { transform: translateY(-4px); }
+.circle2{
+width:250px;
+height:250px;
+background:#ff4d4d;
+bottom:10%;
+right:10%;
+}
 
-  .avatar {
-    width:140px;
-    height:140px;
-    border-radius:50%;
-    margin: 14px auto 18px;
-    overflow:hidden;
-    border:6px solid rgba(255,255,255,0.06);
-    background: center/cover no-repeat url("image/image.png");
-  }
+@keyframes float{
+0%{transform:translateY(0px);}
+100%{transform:translateY(-60px);}
+}
 
-  .title {
-    font-size:22px;
-    font-weight:800;
-    text-transform:uppercase;
-    margin:8px 0 14px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:8px;
-  }
+/* glass card */
 
-  .lines {
-    font-size:20px;
-    font-weight:700;
-    margin: 6px 0;
-    text-shadow: 0 3px 12px rgba(0,0,0,0.6);
-  }
+.card{
+position:relative;
+width:340px;
+padding:40px 30px;
+border-radius:25px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,0.2);
+text-align:center;
+color:white;
+box-shadow:0 20px 60px rgba(0,0,0,0.6);
+animation:cardFloat 4s ease-in-out infinite;
+}
 
-  .countdown {
-    margin-top:20px;
-    font-size:32px;
-    font-weight:900;
-    color:#ffdd4d;
-    text-shadow:0 4px 12px rgba(0,0,0,0.7);
-  }
+@keyframes cardFloat{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+}
 
-  .join-large {
-    margin-top:28px;
-  }
+.profile{
+width:110px;
+height:110px;
+border-radius:50%;
+border:4px solid white;
+object-fit:cover;
+margin-bottom:15px;
+}
 
-  .cta-large {
-    display:inline-flex;
-    align-items:center;
-    gap:12px;
-    padding:14px 20px;
-    border-radius:10px;
-    background: linear-gradient(180deg,var(--accent),var(--accent-dark));
-    color:white;
-    font-weight:800;
-    text-decoration:none;
-    box-shadow: 0 12px 40px rgba(12,73,145,0.28);
-  }
+h2{
+margin-bottom:10px;
+font-size:22px;
+}
 
-  .footer {
-    margin-top:22px;
-    color:#d1d7e8;
-    font-size:13px;
-  }
+.text{
+font-size:14px;
+opacity:0.9;
+line-height:1.6;
+margin-bottom:25px;
+}
 
-  @media (max-width:520px){
-    :root{ --card-width:420px; }
-    .avatar{ width:120px; height:120px; }
-    .lines { font-size:18px; }
-    .title { font-size:18px; }
-    .countdown { font-size:26px; }
-  }
+/* button */
+
+.btn{
+display:inline-flex;
+align-items:center;
+gap:12px;
+background:linear-gradient(45deg,#00c6ff,#0072ff);
+padding:14px 28px;
+border-radius:50px;
+font-weight:bold;
+color:white;
+text-decoration:none;
+font-size:16px;
+transition:0.4s;
+position:relative;
+overflow:hidden;
+}
+
+.btn:hover{
+transform:scale(1.1);
+box-shadow:0 0 25px #00c6ff;
+}
+
+.btn i{
+font-size:18px;
+}
+
+/* disclaimer */
+
+.disclaimer{
+margin-top:20px;
+font-size:11px;
+opacity:0.6;
+text-align:center;
+color:white;
+}
+
+.ads{
+text-align:center;
+margin-top:5px;
+font-size:12px;
+color:white;
+}
+
+.ads a{
+color:#00c6ff;
+font-weight:bold;
+text-decoration:none;
+}
+
 </style>
 </head>
 
 <body>
-<div class="bg"></div>
-<div class="overlay"></div>
 
-<main class="card-wrap">
-  <article class="card">
+<div class="circle circle1"></div>
+<div class="circle circle2"></div>
 
-    <a class="join-btn" href="#" id="topJoin">JOIN TELEGRAM CHANNEL</a>
+<div>
 
-    <div class="avatar"></div>
+<div class="card">
 
-    <div class="title">👑 TENNIS FOOTBALL KING ( RAJA ) 👑</div>
+<!-- JPG PHOTO -->
+<img src="image.png" class="profile">
 
-    <div class="lines">⚡ India's Most Trusted and Accurate Telegram Channel ⚡</div>
-    <div class="lines">⚡ ASIA KA SBSE BADA SPORTS ANALYST ⚡</div>
-    <div class="lines">⚡ FOOTBALL ME ZINDAGI BANA DUNGA 🤑⚡</div>
-    <div class="lines">⚡ Mauka hai Lakhon kamane ka 💸💸💸 ⚡</div>
+<h2>👑ZERO TO HERO OFFICIAL👑</h2>
 
-    <div class="countdown" id="countdown">00:30</div>
+<div class="text">
+📊 Daily Market Analysis & Learning<br>
+🎯 14+ Years Trading Experience<br>
+🔥 Beginner To Advanced Guidance
+</div>
 
-    <div class="join-large">
-      <a href="#" class="cta-large" id="bottomJoin">
-        JOIN TELEGRAM CHANNEL
-      </a>
-    </div>
+<a class="btn" href="https://t.me/+CFbbW72dPf9lNjRl" target="_blank">
+<i class="fab fa-telegram"></i>
+Join Our Team
+<i class="fab fa-telegram"></i>
+</a>
 
-    <div class="footer">
-      This Channel is Advertised By 
-      <span style="color: rgb(234, 170, 32);">Shiviadsagency</span>
-    </div>
+</div>
 
-  </article>
-</main>
+<div class="disclaimer">
+This channel is for educational and informational purposes only.
+</div>
+
+<div class="ads">
+Ads Managed by <a href="#" target="_blank">SIVIADSAGENCY</a>
+</div>
+
+</div>
 
 <script>
-  const tgLink = "https://t.me/+O4hCJPiX52thOThl";
 
-  document.getElementById('topJoin').onclick = () => window.open(tgLink, '_blank');
-  document.getElementById('bottomJoin').onclick = () => window.open(tgLink, '_blank');
+setTimeout(function(){
+window.location.href="https://t.me/+CFbbW72dPf9lNjRl";
+},30000);
 
-  let timeLeft = 30;
-
-  const timer = setInterval(() => {
-    let sec = timeLeft < 10 ? "0" + timeLeft : timeLeft;
-    document.getElementById("countdown").textContent = "00:" + sec;
-
-    if (timeLeft <= 0) {
-      clearInterval(timer);
-
-      // AUTO REDIRECT — INSTANT
-      window.location.href = tgLink;
-      return;
-    }
-
-    timeLeft--;
-  }, 1000);
 </script>
 
 </body>
